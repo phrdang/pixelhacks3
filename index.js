@@ -3,7 +3,7 @@ var lowLetter = 0;
 var numInPassword = 0;
 var specialChar = 0;
 var consecutive = 0;
-var output;
+var output = "";
 
 function validPassword()
 {
@@ -55,43 +55,44 @@ else if (password.charAt(i) == "!"||password.charAt(i) == "@"||password.charAt(i
 
 if(capLetter == 0)
 {
-   output += document.getElementById('passwordOutput').innerHTML = " - At least one uppercase letter." + "<br>";
+   output +=  " - At least one uppercase letter." + "<br>";
 }
 else if(capLetter !== 0)
 {
-   output += document.getElementById('passwordOutput').innerHTML = " + At least one uppercase letter." + "<br>";
+   output += " + At least one uppercase letter." + "<br>";
 }
 if(lowLetter == 0)
 {
-    output +=  document.getElementById('passwordOutput').innerHTML = " - At least one lowercase letter." + "<br>";
+    output +=  " - At least one lowercase letter." + "<br>";
 }
 else if(lowLetter !== 0)
 {
-    output += document.getElementById('passwordOutput').innerHTML = " + At least one lowercase letter."+ "<br>";
+    output +=  " + At least one lowercase letter."+ "<br>";
 }
 if(numInPassword == 0)
 {
-    output += document.getElementById('passwordOutput').innerHTML = " - At least one number."+ "<br>";
+    output +=  " - At least one number."+ "<br>";
 }
 else if(numInPassword !== 0)
 {
-    output += document.getElementById('passwordOutput').innerHTML = " + At least one number."+ "<br>";
+    output +=  " + At least one number."+ "<br>";
 }
 if(specialChar == 0)
 {
-    output += document.getElementById('passwordOutput').innerHTML = " - At least one special character."+ "<br>";
+    output += " - At least one special character."+ "<br>";
 }
 else if(specialChar !== 0)
 {
-    output += document.getElementById('passwordOutput').innerHTML = " + At least one special character."+ "<br>";
+    output += " + At least one special character."+ "<br>";
 }
 if(len < 8)
 {
-    output += document.getElementById('passwordOutput').innerHTML = " - At least 8 characters."+ "<br>";
+    output += " - At least 8 characters."+ "<br>";
 }
 else if(len < 8)
 {
-    output += document.getElementById('passwordOutput').innerHTML = " + At least 8 characters."+ "<br>";
+    output += " + At least 8 characters."+ "<br>";
 }
+document.getElementById('passwordOutput').innerHTML = output + "<br>";
         
 }
