@@ -54,11 +54,11 @@ else if (password.charAt(i) == "!"||password.charAt(i) == "@"||password.charAt(i
 
 if(capLetter == 0)
 {
-   output +=  "<p> &#10060;</p>" + " At least one uppercase letter." + "<br>";
+   output +=  "<p> &#10060;" + " At least one uppercase letter." + "<br>";
 }
 else if(capLetter !== 0)
 {
-   output += "<p>&#x2705;</p>"  + "At least one uppercase letter." + "<br>";
+   output += "<p>&#x2705;"  + "At least one uppercase letter." + "<br>";
 }
 if(lowLetter == 0)
 {
