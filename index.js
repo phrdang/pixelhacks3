@@ -58,7 +58,7 @@ if(capLetter == 0)
 }
 else if(capLetter !== 0)
 {
-   output += " + At least one uppercase letter." + "<br>";
+   output += "<p>&#x2705;</p>"  + "At least one uppercase letter." + "<br>";
 }
 if(lowLetter == 0)
 {
