@@ -54,7 +54,7 @@ else if (password.charAt(i) == "!"||password.charAt(i) == "@"||password.charAt(i
 
 if(capLetter == 0)
 {
-   document.getElementById('passwordOutput').innerHTML = " - At least one uppercase letter.";
+   document.getElementById('passwordOutput').innerHTML = " - At least one uppercase letter." + "<br>" + "Testing";
 }
 else if(capLetter !== 0)
 {
