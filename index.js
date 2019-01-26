@@ -56,21 +56,13 @@ else if (password.charAt(i) == "!"||password.charAt(i) == "@"||password.charAt(i
 
 }
 
-//if(capLetter !== 0 && lowLetter !== 0 && numInPassword !== 0 && specialChar !== 0 && len == 8)
-//{
- //   document.getElementById('passwordOutput').innerHTML = "Valid Password";
-    
-//}
-
-//special char == good
-
-
-if(numInPassword !== 0)
+if(capLetter !== 0 && lowLetter !== 0 && numInPassword !== 0 && specialChar !== 0)
 {
-    document.getElementById('passwordOutput').innerHTML = "Valid Password";
+   document.getElementById('passwordOutput').innerHTML = "Valid Password";
     
 }
-else if (capLetter == 0 || lowLetter == 0 || numInPassword == 0 || specialChar == 0 )
+
+else
 {
     document.getElementById('passwordOutput').innerHTML = "Invalid Password";
   
