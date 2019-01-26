@@ -7,9 +7,8 @@ var output = "";
 
 function validPassword()
 {
-var password = prompt("Please enter your password");
+var password = prompt("Enter a password: ");
 var len = password.length;
-
 var i;
 for (i = 0; i < len; i++) 
 { 
