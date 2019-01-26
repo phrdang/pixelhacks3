@@ -52,16 +52,45 @@ else if (password.charAt(i) == "!"||password.charAt(i) == "@"||password.charAt(i
 
 }
 
-if(capLetter !== 0 && lowLetter !== 0 && numInPassword !== 0 && specialChar !== 0)
+if(capLetter == 0)
 {
-   document.getElementById('passwordOutput').innerHTML = "Valid Password";
-    
+   document.getElementById('passwordOutput').innerHTML = " - At least one uppercase letter.";
 }
-
-else
+else if(capLetter !== 0)
 {
-    document.getElementById('passwordOutput').innerHTML = "Invalid Password";
-  
-  }
+   document.getElementById('passwordOutput').innerHTML = " + At least one uppercase letter.";
+}
+if(lowLetter == 0)
+{
+   document.getElementById('passwordOutput').innerHTML = " - At least one lowercase letter.";
+}
+else if(lowLetter !== 0)
+{
+   document.getElementById('passwordOutput').innerHTML = " + At least one lowercase letter.";
+}
+if(numInPassword == 0)
+{
+   document.getElementById('passwordOutput').innerHTML = " - At least one number.";
+}
+else if(numInPassword !== 0)
+{
+   document.getElementById('passwordOutput').innerHTML = " + At least one number.";
+}
+if(specialChar == 0)
+{
+   document.getElementById('passwordOutput').innerHTML = " - At least one special character.";
+}
+else if(specialChar !== 0)
+{
+   document.getElementById('passwordOutput').innerHTML = " + At least one special character.";
+}
+if(len < 8)
+{
+   document.getElementById('passwordOutput').innerHTML = " - At least 8 characters.";
+}
+else if(len < 8)
+{
+   document.getElementById('passwordOutput').innerHTML = " + At least 8 characters.";
+}
         
 }
