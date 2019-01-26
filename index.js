@@ -13,16 +13,6 @@ var bigLetters = /^[A-Z]*$/;
 var smallLetters = /^[a-z]*$/;
 var numbers = /^[0-9]*$/; 
 
-
-if (len < 8)
-{
-    document.getElementById('passwordOutput').innerHTML = "Password is too short.";
-}
-
-var bigLetters = /^[A-Z]*$/;
-var smallLetters = /^[a-z]*$/;
-var numbers = /^[0-9]*$/; 
-
 var i;
 for (i = 0; i < len; i++) 
 { 
@@ -51,7 +41,7 @@ for (i = 0; i < len; i++)
 
 }
 
-if(capLetter == 0 || lowLetter == 0 || numInPassword == 0 || specialChar == 0 )
+if(capLetter == 0 || lowLetter == 0 || numInPassword == 0 || specialChar == 0 || len < 8)
 {
     document.getElementById('passwordOutput').innerHTML = "Invalid Password";
     
