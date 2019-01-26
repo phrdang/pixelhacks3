@@ -47,7 +47,10 @@ for (i = 0; i < len; i++)
     
 //}
 
-if(specialChar !== 0)
+//special char == good
+
+
+if(numInPassword !== 0)
 {
     document.getElementById('passwordOutput').innerHTML = "Valid Password";
     
