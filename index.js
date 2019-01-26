@@ -16,25 +16,25 @@ var numbers = /^[0-9]*$/;
 var i;
 for (i = 0; i < len; i++) 
 { 
-  if(password.substring(i, i + 1) == bigLetters)
+  if(password.charAt(i) == bigLetters)
   {
     capLetter++;
   }
-  else if (password.substring(i, i + 1) == smallLetters)
+  else if (password.charAt(i) == smallLetters)
   {
     lowLetter++;
   }
-  else if (password.substring(i, i + 1) == numbers)
+  else if (password.charAt(i) == numbers)
   {
     numInPassword++;
   }
-  else if (password.substring(i, i+1) == "!"||password.substring(i, i+1) == "@"||password.substring(i, i+1) == "#"|| password.substring(i, i+1) =="$"
-  || password.substring(i, i+1) == "%"||password.substring(i, i+1) == "^"||password.substring(i, i+1) == "&"|| password.substring(i, i+1) =="*"||
-  password.substring(i, i+1) == "("||password.substring(i, i+1) == ")"||password.substring(i, i+1) == "-" || password.substring(i, i+1) == "+"||
-  password.substring(i, i+1) == "_"|| password.substring(i, i+1) == "="||password.substring(i, i+1) == "{"||password.substring(i, i+1) == "}"||
-  password.substring(i, i+1) == "["||password.substring(i, i+1) == "]"||password.substring(i, i+1) == "|"||password.substring(i, i+1) == ":"||
-  password.substring(i, i+1) == ";" || password.substring(i, i+1) == "'"||password.substring(i, i+1) == "<"||password.substring(i, i+1) == ">"||
-  password.substring(i, i+1) == "?"||password.substring(i, i+1) == "`"||password.substring(i, i+1) == "~")
+  else if (password.charAt(i) == "!"||password.charAt(i) == "@"||password.charAt(i) == "#"|| password.charAt(i) =="$"
+  || password.charAt(i) == "%"||password.charAt(i) == "^"||password.charAt(i) == "&"|| password.charAt(i) =="*"||
+  password.charAt(i) == "("||password.charAt(i) == ")"||password.charAt(i) == "-" || password.charAt(i) == "+"||
+  password.charAt(i) == "_"|| password.charAt(i) == "="||password.charAt(i) == "{"||password.charAt(i) == "}"||
+  password.charAt(i) == "["||password.charAt(i) == "]"||password.charAt(i) == "|"||password.charAt(i) == ":"||
+  password.charAt(i) == ";" || password.charAt(i) == "'"||password.charAt(i) == "<"||password.charAt(i) == ">"||
+  password.charAt(i) == "?"||password.charAt(i) == "`"||password.charAt(i) == "~")
   {
     specialChar++;
   }
