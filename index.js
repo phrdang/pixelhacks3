@@ -54,7 +54,7 @@ else if (password.charAt(i) == "!"||password.charAt(i) == "@"||password.charAt(i
 
 if(capLetter == 0)
 {
-   output +=  " - At least one uppercase letter." + "<br>";
+   output +=  "<p> &#10060;</p>" + " At least one uppercase letter." + "<br>";
 }
 else if(capLetter !== 0)
 {
@@ -62,35 +62,35 @@ else if(capLetter !== 0)
 }
 if(lowLetter == 0)
 {
-    output +=  " - At least one lowercase letter." + "<br>";
+    output +=  "<p> &#10060;</p>" + " At least one lowercase letter." + "<br>";
 }
 else if(lowLetter !== 0)
 {
-    output +=  " + At least one lowercase letter."+ "<br>";
+    output +=  "<p>&#x2705;</p>"  + "At least one lowercase letter." + "<br>";
 }
 if(numInPassword == 0)
 {
-    output +=  " - At least one number."+ "<br>";
+    output +=  "<p> &#10060;</p>" +  " At least one number."+ "<br>";
 }
 else if(numInPassword !== 0)
 {
-    output +=  " + At least one number."+ "<br>";
+    output +=  "<p>&#x2705;</p>" + " At least one number."+ "<br>";
 }
 if(specialChar == 0)
 {
-    output += " - At least one special character."+ "<br>";
+    output += "<p> &#10060;</p>" +  " At least one special character."+ "<br>";
 }
 else if(specialChar !== 0)
 {
-    output += " + At least one special character."+ "<br>";
+    output += "<p>&#x2705;</p>" + " At least one special character."+ "<br>";
 }
 if(len < 8)
 {
-    output += " - At least 8 characters."+ "<br>";
+    output += "<p> &#10060;</p>" +  " At least 8 characters."+ "<br>";
 }
 else if(len >= 8)
 {
-    output += " + At least 8 characters."+ "<br>";
+    output += "<p>&#x2705;</p>" + " At least 8 characters."+ "<br>";
 }
 document.getElementById('passwordOutput').innerHTML = output + "<br>";
         
