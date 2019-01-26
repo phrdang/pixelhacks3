@@ -9,10 +9,6 @@ function validPassword()
 var password = prompt("Please enter your password");
 var len = password.length;
 
-var bigLetters = /^[A-Z]*$/;
-var smallLetters = /^[a-z]*$/;
-var numbers = /^[0-9]*$/; 
-
 var i;
 for (i = 0; i < len; i++) 
 { 
