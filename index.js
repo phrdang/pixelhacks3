@@ -16,7 +16,7 @@ var numbers = /^[0-9]*$/;
 
 if (len < 8)
 {
-    System.out.println("Password is too short.");
+    document.getElementById('passwordOutput').innerHTML = "Password is too short.";
 }
 
 var bigLetters = /^[A-Z]*$/;
