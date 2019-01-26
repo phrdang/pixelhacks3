@@ -33,7 +33,7 @@ for (i = 0; i < len; i++)
   password.charAt(i) == "("||password.charAt(i) == ")"||password.charAt(i) == "-" || password.charAt(i) == "+"||
   password.charAt(i) == "_"|| password.charAt(i) == "="||password.charAt(i) == "{"||password.charAt(i) == "}"||
   password.charAt(i) == "["||password.charAt(i) == "]"||password.charAt(i) == "|"||password.charAt(i) == ":"||
-  password.charAt(i) == ";" || password.charAt(i) == "'"||password.charAt(i) == "<"||password.charAt(i) == ">"||
+  password.charAt(i) == ";" || password.charAt(i) == "'"||password.charAt(i) == "<"||password.substring(i, i+1) == ">"||
   password.charAt(i) == "?"||password.charAt(i) == "`"||password.charAt(i) == "~")
   {
     specialChar++;
@@ -41,14 +41,14 @@ for (i = 0; i < len; i++)
 
 }
 
-if(capLetter == 0 || lowLetter == 0 || numInPassword == 0 || specialChar == 0 || len < 8)
-{
-    document.getElementById('passwordOutput').innerHTML = "Invalid Password";
-    
-}
-else if (capLetter !== 0 || lowLetter !== 0 || numInPassword !== 0 || specialChar !== 0 )
+if(capLetter !== 0 || lowLetter !== 0 || numInPassword !== 0 || specialChar !== 0 || len == 8)
 {
     document.getElementById('passwordOutput').innerHTML = "Valid Password";
+    
+}
+else if (capLetter == 0 || lowLetter == 0 || numInPassword == 0 || specialChar == 0 )
+{
+    document.getElementById('passwordOutput').innerHTML = "Inalid Password";
   
   }
         
