@@ -84,11 +84,11 @@ else if(specialChar !== 0)
 {
     output += " + At least one special character."+ "<br>";
 }
-if(len >= 8)
+if(len < 8)
 {
     output += " - At least 8 characters."+ "<br>";
 }
-else if(len < 8)
+else if(len >= 8)
 {
     output += " + At least 8 characters."+ "<br>";
 }
