@@ -47,7 +47,7 @@ for (i = 0; i < len; i++)
     
 //}
 
-if(capLetter !== 0 && lowLetter !== 0)
+if(specialChar !== 0)
 {
     document.getElementById('passwordOutput').innerHTML = "Valid Password";
     
