@@ -12,7 +12,7 @@ var len = password.length;
 var bigLetters = /^[A-Z]*$/;
 var smallLetters = /^[a-z]*$/;
 var numbers = /^[0-9]*$/; 
-var specialChar = ;
+
 
 if (len < 8)
 {
