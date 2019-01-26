@@ -53,11 +53,12 @@ for (i = 0; i < len; i++)
 
 if(capLetter == 0 || lowLetter == 0 || numInPassword == 0 || specialChar == 0 )
 {
-    System.out.println("Invalid Password");
+    document.getElementById('passwordOutput').innerHTML = "Invalid Password";
+    
 }
 else if (capLetter !== 0 || lowLetter !== 0 || numInPassword !== 0 || specialChar !== 0 )
 {
-    System.out.println("Valid Password");
+    document.getElementById('passwordOutput').innerHTML = "Valid Password";
   
   }
         
