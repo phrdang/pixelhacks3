@@ -93,5 +93,7 @@ else if(len >= 8)
     output += "<p>&#x2705;" + "    At least 8 characters."+ "<br>";
 }
 document.getElementById('passwordOutput').innerHTML = output + "<br>";
+
+output = "";
         
 }
