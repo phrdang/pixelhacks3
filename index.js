@@ -56,7 +56,7 @@ if(capLetter == 0)
 {
    output +=  "<p> &#10060;" + "    At least one uppercase letter." + "<br>";
 }
-else if(capLetter !== 0)
+else 
 {
    output += "<p>&#x2705;"  + "    At least one uppercase letter." + "<br>";
 }
@@ -64,7 +64,7 @@ if(lowLetter == 0)
 {
     output +=  "<p> &#10060;" + "    At least one lowercase letter." + "<br>";
 }
-else if(lowLetter !== 0)
+else
 {
     output +=  "<p>&#x2705;"  + "    At least one lowercase letter." + "<br>";
 }
@@ -72,7 +72,7 @@ if(numInPassword == 0)
 {
     output +=  "<p> &#10060;" +  "    At least one number."+ "<br>";
 }
-else if(numInPassword !== 0)
+else 
 {
     output +=  "<p>&#x2705;" + "    At least one number."+ "<br>";
 }
@@ -80,7 +80,7 @@ if(specialChar == 0)
 {
     output += "<p> &#10060;" +  "    At least one special character."+ "<br>";
 }
-else if(specialChar !== 0)
+else 
 {
     output += "<p>&#x2705;" + "    At least one special character."+ "<br>";
 }
@@ -88,10 +88,16 @@ if(len < 8)
 {
     output += "<p> &#10060;" +  "    At least 8 characters."+ "<br>";
 }
-else if(len >= 8)
+else 
 {
     output += "<p>&#x2705;" + "    At least 8 characters."+ "<br>";
 }
 document.getElementById('passwordOutput').innerHTML = output + "<br>";
+
+output = "";
+capLetter = 0;
+lowLetter = 0;
+numInPassword = 0;
+specialChar = 0;
         
 }
