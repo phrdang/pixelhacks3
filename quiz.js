@@ -1,9 +1,3 @@
-// var answer = true;
-// var wrongAnswer = false;
-// var questions = [10];
-// var buttons = [];
-// var num_buttons = 4;
-
 var data = [
     {
         question: 'What is cyber security?',
