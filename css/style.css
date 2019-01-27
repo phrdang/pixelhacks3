@@ -1,21 +1,15 @@
 .header{ 
     color:red;
-    font-family: 'Rokkitt'
+    font-family: 'Rokkitt';
+}
 
 .navbar {
     position: fixed;
     z-index: 10;
     top: 0;
-    width: 100%;
     border-radius: 0em;
     display: inline;
 }
-
-/*
-.main {
-    margin-top: 20em;
-}
-*/
 
 .header-image {
     background-image: url("https://wallpaperplay.com/walls/full/1/d/3/324370.jpg");
@@ -29,5 +23,4 @@ div.header-image {
     text-align: center;
     color: white;
     vertical-align: top;
-    margin-top: 
 }
