@@ -75,6 +75,7 @@ var data = [
     }
 
     ];
+
     function securityQuiz() 
     {
         data.forEach(function(datum){
@@ -92,7 +93,6 @@ var data = [
             
     
             $button.click(function(){
-                var hm = answer;
                 var test = $(this).text();
     
             if(test === 'The act of protecting networks, systems and programs from digital harm.' ||
@@ -114,9 +114,7 @@ var data = [
                $(this).css("background-color", "rgb(255, 142, 142)")
                $(this).css("color","black");
             }
-               
-    
-    
+              
             });
         });
         $('body').append($widget);
