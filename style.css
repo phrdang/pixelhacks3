@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-.header{ 
-    color:red;
-    font-family: 'Rokkitt'
-
-=======
-.navbar {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    width: 100%;
-    border-radius: 0em;
-    display: inline;
-}
-
-/*
-.main {
-    margin-top: 20em;
-}
-*/
 
 .header-image {
     background-image: url("https://wallpaperplay.com/walls/full/1/d/3/324370.jpg");
@@ -31,6 +11,73 @@ div.header-image {
     text-align: center;
     color: white;
     vertical-align: top;
-    margin-top: 
->>>>>>> 2337d6f511fe032718067c960912f6abc5e88f16
 }
+
+/*Isn't on the bottom*/
+footer {
+    width: 100%;
+    background-color: #131f28;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+}
+
+/*EVERYTHING BELOW HAS BEEN CHECKED AND WORKS*/
+
+/*Navigation*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    border-radius: 0em;
+}
+
+body, html {
+    background-color: whitesmoke;
+    height: 100%;
+    min-height: 100%;
+}
+
+/*So that navbar doesn't cover top*/
+.main {
+    margin-top: 3.5em;
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+h1, h3 {
+    color: #131f28;
+    font-family: 'Raleway', sans-serif;
+}
+
+b {
+    color: #3fc2c6;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3fc2c6;
+    color: #131f28;
+    border: 1px #131f28 solid;
+}
+
+button:active {
+    margin-top: 5px;
+}
+
+/*Colors:
+Accent Light: #5ce1e6
+Accent Medium: #3fc2c6
+Dark: #131f28
+*/
