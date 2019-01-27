@@ -4,13 +4,10 @@
     width: 100%;
     height: 40em;
     opacity: 0.8;
-}
-
-/*This part isn't working*/
-div.header-image {
     text-align: center;
     color: white;
     vertical-align: top;
+    font-size: 5em;
 }
 
 /*Isn't on the bottom*/
@@ -22,8 +19,6 @@ footer {
     padding: 1em;
     bottom: 0;
 }
-
-/*EVERYTHING BELOW HAS BEEN CHECKED AND WORKS*/
 
 /*Navigation*/
 .navbar {
@@ -50,14 +45,13 @@ h1 {
     color: red;
 }
 
-h1, h3 {
+h1, h3, h5 {
     font-family: 'Raleway', sans-serif;
 }
 
 h3 {
     color: #131f28;
-    text-decoration: underline overline;
-    padding: 0.5em;
+    text-decoration: underline;
 }
 
 b {
@@ -90,9 +84,28 @@ button:active {
 
 img {
     border: 5px #131f28 dashed;
-    padding: 2em;
+    padding: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.even-row {
+    background-color: #ecd9f9;
+}
+
+.odd-row {
+    background-color: whitesmoke;
+}
+
+h5 {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+#header {
+    width: 100%;
+    padding: 0;
+    border: none;
 }
 
 /*Colors:
