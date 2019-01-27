@@ -6,6 +6,7 @@
         <!--Bootstrap CSS classes-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <script src="index.js"></script>
     </head>
     <body>
@@ -78,18 +79,25 @@
                     <p>
                         In today's world, we have accounts for everything--email, social media,
                         banking, learning, you name it. If they can, criminals will take advantage
-                        of these systems to get your personal information and money.
-                        <br>
-                        <br>
-                        The bottom line is, if hackers get your information, <b>you could lose lots of time and money,</b>
-                        and it just generally causes a big headache. To avoid that, we created PSYBER
+                        of these systems to get your personal information and money. To avoid that, we created PSYBER
                         to educate the public about the importance of cybersecurity and ways to stay safe 
                         when navigating the web.
+                        <br>
+                        <br>
+                        The internet is not just made up of
+                        computers and machines, it's made of the people
+                        using it. At PSYBER, we believe that we need to change people's <em>mindsets</em>
+                        (hence "<b>PSY</b>BER") so that they take steps to make the internet secure.
                     </p>
                 </div>
             </div>
         </div>
         <h1 id="pwds">Passwords</h1>
+            <button onclick="validPassword()"> Enter your password </button>
+    
+        
+        <p id="test-ouput"></p>
+        <p id="passwordOutput"></p>
         <h3>The Status Quo</h3>
         <p>The purpose of a password is the make sure that your account is secure
             and that only you have access to it. If you use simple passwords, you
@@ -98,7 +106,7 @@
             With a brute force attack, it would take a hacker:
             <br>
             <div class="container">
-                <div class="row">
+                <div class="row active">
                     <div class="col-sm-6">
                         0.29 milliseconds to crack a password with...
                     </div>
@@ -114,7 +122,7 @@
                         9 letters
                     </div>
                 </div>
-                <div class="row">
+                <div class="row active">
                     <div class="col-sm-6">
                         Over 10 years to crack a password with...
                     </div>
@@ -124,6 +132,7 @@
                 </div>
             </div>
         </p>
+
         <h3 id="pwd-managers">Password Managers</h3>
         <p>Now that you know the key to a strong password, you must be thinking:
             <br>
@@ -170,5 +179,34 @@
                 </div>
             </div>
         </div>
+        <h1 id="encryption">Encryption</h1>
+        <p>
+            According to <a href="https://en.wikipedia.org/wiki/Encryption#Types" target="_blank">Wikipedia</a>, 
+            "encryption is the process of encoding a message or information 
+            in such a way that only authorized parties can access it and those who are not authorized cannot."
+            <br>
+            <br>
+            Essentially, that's a fancy way to say that it takes data from the user and
+            turns it into a code that can't be deciphered without an <b>encryption key</b>.
+            That way, even if a hacker breaks into your device (such as your phone or laptop)
+            they won't have access to your information because it's encrypted.
+            <br>
+            <br>
+            <b>You've probably used encrypted devices without even knowing it!</b>
+            <ul>
+                <li>Many password managers offer encryption to protect your password databases</li>
+                <li>iPhones are automatically encrypted</li>
+                <li>Many businesses and universities use encryption</li>
+            </ul>
+        
+            <b>Types of Encryption Algorithms</b>
+            <ul>
+                <li>AES</li>
+                <li>Triple DES</li>
+                <li>RSA</li>
+                <li>Blowfish</li>
+                <li>Twofish</li>
+            </ul>    
+        </p>
     </body>
 </html>
