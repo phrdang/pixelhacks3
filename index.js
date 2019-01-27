@@ -94,6 +94,7 @@ else if(len >= 8)
 }
 document.getElementById('passwordOutput').innerHTML = output + "<br>";
 
-output == "";
+output = "";
+password = "";
         
 }
