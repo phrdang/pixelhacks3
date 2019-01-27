@@ -31,6 +31,7 @@
                 </nav>
         </header>
         <body> 
+            <div class="main-content">
             <h1 id="encryption">Encryption</h1>
             <p>
                 According to <a href="https://en.wikipedia.org/wiki/Encryption#Types" target="_blank">Wikipedia</a>, 
@@ -41,7 +42,7 @@
                 Essentially, that's a fancy way to say that it takes data from the user and
                 turns it into a code that can't be deciphered without an <b>encryption key</b>.
                 That way, even if a hacker breaks into your device (such as your phone or laptop)
-                they won't have access to your information because it's encrypted.
+                they won't have access to your information because it's encoded.
                 <br>
                 <br>
                 <b>You've probably used encrypted devices without even knowing it!</b>
@@ -59,24 +60,34 @@
                     <li>Blowfish</li>
                     <li>Twofish</li>
                 </ul>
-                <h3>try it out!</h3>    
+                <h3>Try it out!</h3>    
                 <p>Enter some text below, and we'll encode it in a Caesar cipher,
-                    where every letter or number is shifted by a certain amount,
-                    which you can specify below.
+                    where every letter or number is shifted by a certain amount.
                     <br>
                     <br>
                     For example, if I wanted to "encrypt" the string "abcd" and shift
                     it by 1 letter, the encoded string would be "bcde."
-                    <button onclick="encryptText()">Click here to encrypt text!</button>
                     <br>
-                    <b>Encoded result</b>
                     <br>
+                    <button onclick="encryptText()">"Encrypt" and then "decrypt" text</button>
+                    <p id="encrypt-output-title"></p>
                     <p id="encrypt-output"></p>
-                    <br>
-                    The Caesar cipher is a simple way to encode something,
+                    <p id="decrypt-output-title"></p>
+                    <p id="decrypt-output"></p>
+                    The Caesar cipher is an extremely simple way to encode something,
                     but real-life encryption is much harder to crack using
-                    brute force which makes it secure!
+                    brute force which makes it secure! It can also encode characters such as 
+                    numbers and symbols.
+                    <br>
+                    <br>
+                    <em>Special Thanks to Git user EvanHahn for providing the framework
+                        for the Caesar Cipher code.
+                    </em>
+                    <br>
+                    <br>
+                    <a href="https://gist.github.com/EvanHahn/2587465" target="_blank"><button>Source</button></a>
             </p>
+        </div>
         <footer>
             <p>&copy; Psyber 2019 | Created at PixelHacks III</p>
         </footer>

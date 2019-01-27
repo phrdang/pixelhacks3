@@ -1,96 +1,101 @@
-/*Don't forget to reset output*/
+function decryptText(encryptedText, shiftAmount){
+    var regText = encryptedText;
+    var amount = shiftAmount;
+
+    var strRegText = regText.toString();
+
+	// Make an output variable
+	var output = '';
+
+	// Go through each character
+	for (var i = 0; i < strRegText.length; i ++) {
+        if (shiftAmount > 0 || shiftAmount <= -23){
+            output = 'No decrypted text available. Please try again!';
+        }
+
+		// Get the character we'll be appending
+        var c = strRegText[i];
+        
+        // Remove commas
+        if (c.match(/,/)) {
+            c = '';
+        }
+        //Check for other non-letter characters
+        else if (c.match(/[^a-zA-Z\W]/g)) {
+            alert('Error, please only type in LETTERS (uppercase or lowercase).');
+            output = 'No decrypted text available. Please try again!'
+            break;
+        //Encrypts
+        } else {
+			// Get its UTC code
+			var code = strRegText.charCodeAt(i);
+
+			// Uppercase letters
+			if ((code >= 65) && (code <= 90)) {
+                c = String.fromCharCode(((code - 65 + amount) % 26) + 65);
+            }
+				
+			// Lowercase letters
+			else if ((code >= 97) && (code <= 122)) {
+                c = String.fromCharCode(((code - 97 + amount) % 26) + 97);
+            } 
+		}
+		// Append
+		output += c;
+    }
+    document.getElementById('decrypt-output-title').innerHTML = '<b>' + 'Decoded result:' + '</b>' + '<br>';
+    document.getElementById('decrypt-output').innerHTML = output + '<br>';
+}
+
 function encryptText() {
     var regText = prompt('Enter text to "encrypt":');
-    var encText = [];
-    var outputEncText;
-    var uppercaseLetter = /[A-Z]/g;
-    var lowercaseLetter = /[a-z]/g;
-    var number = /[0-9]/g;
+    var shiftAmount = parseInt(prompt('How much would you like to shift?').toString());
+    var amount = shiftAmount;
+    var strRegText = regText.toString();
 
-    lowerAlphabet = [
-        'a',
-        'b',
-        'c',
-        'd',
-        'e',
-        'f',
-        'g',
-        'h',
-        'i',
-        'j',
-        'k',
-        'l',
-        'm',
-        'n',
-        'o',
-        'p',
-        'q',
-        'r',
-        's',
-        't',
-        'u',
-        'v',
-        'w',
-        'x',
-        'y',
-        'z',
-    ]
+	// Make an output variable
+	var output = '';
 
-    upperAlphabet = [
-        'A',
-        'B',
-        'C',
-        'D',
-        'E',
-        'F',
-        'G',
-        'H',
-        'I',
-        'J',
-        'K',
-        'L',
-        'M',
-        'N',
-        'O',
-        'P',
-        'Q',
-        'R',
-        'S',
-        'T',
-        'U',
-        'V',
-        'W',
-        'X',
-        'Y',
-        'Z',
-    ]
-
-    for (character in regText) {
-        /*Checks if input contains symbols*/
-        if (regText[character].match(/[^0-9a-zA-Z]/g)) {
-            alert('Error, please only type in letters or numbers. Do not include spaces.');
-            outputEncText = 'No encrypted text available. Please try again!'
+	// Go through each character
+	for (var i = 0; i < strRegText.length; i ++) {
+        if (shiftAmount < 0 || shiftAmount >= 23){
+            alert('Sorry, at this time our cipher program only works with shifts from 0-22.');
+            output = 'No encrypted text available. Please try again!';
             break;
-        
-        /*Encrypts*/
-        } else {
-            if (regText[character].match(lowercaseLetter)) {
-                for (letter in lowerAlphabet) {
-                    if (regText[character] == lowerAlphabet[letter]) {
-                        encText.push(lowerAlphabet[letter + 2]);
-                        continue;
-                    }
-                }
-            } else if (regText[character].match(uppercaseLetter)) {
-                for (letter in upperAlphabet) {
-                    if (regText[character] == upperAlphabet[letter]) {
-                        encText.push(upperAlphabet[letter + 2]);
-                        continue;
-                    }
-                }
-            } 
-            outputEncText = encText.toString();
         }
-    }  
-    document.getElementById('encrypt-output').innerHTML = outputEncText;
+
+		// Get the character we'll be appending
+        var c = strRegText[i];
+        
+        // Remove commas
+        if (c.match(/,/)) {
+            c = '';
+        }
+        //Check for other non-letter characters
+        else if (c.match(/[^a-zA-Z\W]/g)) {
+            alert('Error, please only type in LETTERS (uppercase or lowercase).');
+            output = 'No encrypted text available. Please try again!'
+            break;
+        //Encrypts
+        } else {
+			// Get its UTC code
+			var code = strRegText.charCodeAt(i);
+
+			// Uppercase letters
+			if ((code >= 65) && (code <= 90)) {
+                c = String.fromCharCode(((code - 65 + amount) % 26) + 65);
+            }
+				
+			// Lowercase letters
+			else if ((code >= 97) && (code <= 122)) {
+                c = String.fromCharCode(((code - 97 + amount) % 26) + 97);
+            } 
+		}
+		// Append
+		output += c;
+    }
+    document.getElementById('encrypt-output-title').innerHTML = '<b>' + 'Encoded result:' + '</b>' + '<br>';
+    document.getElementById('encrypt-output').innerHTML = output + '<br>';
+
+    decryptText(output, -amount);
 }
