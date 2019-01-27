@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 .header{ 
     color:red;
     font-family: 'Rokkitt'
 
-=======
 .navbar {
     position: fixed;
     z-index: 10;
@@ -32,5 +30,4 @@ div.header-image {
     color: white;
     vertical-align: top;
     margin-top: 
->>>>>>> 2337d6f511fe032718067c960912f6abc5e88f16
 }
