@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<head>
+    <meta charset="utf-8">
+    <title>PSYBER | About</title>
+    <!--Bootstrap CSS classes-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+    <body style = "background-color : whitesmoke"> 
+        <h1 id="encryption">Encryption</h1>
+        <p>
+            According to <a href="https://en.wikipedia.org/wiki/Encryption#Types" target="_blank">Wikipedia</a>, 
+            "encryption is the process of encoding a message or information 
+            in such a way that only authorized parties can access it and those who are not authorized cannot."
+            <br>
+            <br>
+            Essentially, that's a fancy way to say that it takes data from the user and
+            turns it into a code that can't be deciphered without an <b>encryption key</b>.
+            That way, even if a hacker breaks into your device (such as your phone or laptop)
+            they won't have access to your information because it's encrypted.
+            <br>
+            <br>
+            <b>You've probably used encrypted devices without even knowing it!</b>
+            <ul>
+                <li>Many password managers offer encryption to protect your password databases</li>
+                <li>iPhones are automatically encrypted</li>
+                <li>Many businesses and universities use encryption</li>
+            </ul>
+        
+            <b>Types of Encryption Algorithms</b>
+            <ul>
+                <li>AES</li>
+                <li>Triple DES</li>
+                <li>RSA</li>
+                <li>Blowfish</li>
+                <li>Twofish</li>
+            </ul>
+            <h3><class>header</class>try it out!</h3>    
+            <p>Enter some text below, and we'll encode it in a Caesar cipher,
+                where every letter or number is shifted by a certain amount,
+                which you can specify below.
+                <br>
+                <br>
+                For example, if I wanted to "encrypt" the string "abcd" and shift
+                it by 1 letter, the encoded string would be "bcde."
+                <form>
+                    <label>Type in text to "encrypt":</label>
+                    <br>
+                    <input type="text" name="encrypt-this">
+                    <input type="submit" value="submit">
+                </form>
+                <br>
+                <b>Encoded result</b>
+                <br>
+                <p id="encrypt-output"></p>
+                <br>
+                The Caesar cipher is a simple way to encode something,
+                but real-life encryption is much harder to crack using
+                brute force which makes it secure!
+            </p>
+        </p>
+    </div>
+</body>
+</html>
+</body>
+
