@@ -93,3 +93,4 @@ function encryptText() {
         }
     }  
     document.getElementById('encrypt-output').innerHTML = outputEncText;
+}
